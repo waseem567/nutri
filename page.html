@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- slick -->
+        <link rel="stylesheet" type="text/css"
+            href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css" />
+        <link rel="stylesheet" type="text/css"
+            href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <title>NUTRIFACTOR</title>
+    </head>
+    <body>
+        <main id="main">
+            <!-- navbar starts -->
+            <nav class="nav__bar roboto main__nav">
+                <div class="max-w">
+                    <nav class="nav__bar">
+                        <div class="nav__logo">
+                            <a href="#"><img
+                                    src="https://s.zillowstatic.com/pfs/static/z-logo-default-visual-refresh.svg"
+                                    alt="logo"></a>
+                        </div>
+                        <div class="nav__options">
+                            <ul>
+                                <li> <a href="#">Home</a></li>
+                                <li> <a href="#">Product</a></li>
+                                <li> <a href="#">Offer</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav__hamburger">
+                            <span class="cart"><i
+                                    class="fa-solid fa-cart-shopping"></i></span>
+                            <i class="fa-solid fa-bars ham"
+                                onclick="sideBarOpenHandler()"></i>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+            <!-- navbar ends -->
+            <!-- custom slider starts here-->
+            <!-- <div id="slider" class="b-1">
+         <div class="carousel-container">
+         <div class="carousel-slide">
+             <div class="slider__item">
+                 <img src="https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2148998015.jpg?t=st=1716448131~exp=1716451731~hmac=1be134811a8eaeef2a88ffd61f9e5eccd29a7424bd657e402447839f911904a4&w=740" alt="slider image">
+                 <div class="max-w">
+                     <div class="slider__text roboto">
+                         <h1>Exclusive <br>Zuice Bottle</h1>  
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolorum corrupti quo corporis doloremque cupiditate inventore. Deleniti eveniet quasi deserunt ipsa . Deleniti eveniet quasi deserunt ipsa </p>   
+                     </div>
+                 </div>
+             </div>
+             <div class="slider__item">
+                 <img src="https://img.freepik.com/free-photo/black-white-background_23-2150531051.jpg?t=st=1716448169~exp=1716451769~hmac=1137ea221ed15e8aa59062b1b7b529ebe4931ff214a8aacd519b85e5782f12d4&w=826" alt="slider image">
+                 <div class="max-w">
+                     <div class="slider__text roboto">
+                         <h1>Exclusive <br>Zuice Bottle</h1>  
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolorum corrupti quo corporis doloremque cupiditate inventore. Deleniti eveniet quasi deserunt ipsa . Deleniti eveniet quasi deserunt ipsa </p>   
+                     </div>
+                 </div>
+             </div>
+             <div class="slider__item">
+                 <img src="https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2148998015.jpg?t=st=1716448131~exp=1716451731~hmac=1be134811a8eaeef2a88ffd61f9e5eccd29a7424bd657e402447839f911904a4&w=740" alt="slider image">
+                 <div class="max-w">
+                     <div class="slider__text roboto">
+                         <h1>Exclusive <br>Zuice Bottle</h1>  
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolorum corrupti quo corporis doloremque cupiditate inventore. Deleniti eveniet quasi deserunt ipsa . Deleniti eveniet quasi deserunt ipsa </p>   
+                     </div>
+                 </div>
+             </div>
+         </div>
+         </div>
+         </div>
+         
+         <button class="left__button" onclick="moveSlide(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+         <button class="right__button" onclick="moveSlide(1)"><i class="fa-solid fa-arrow-right"></i></button>
+         </div> -->
+            <!-- custom slider ends -->
+            <!-- slick slider starts -->
+            <div id="slider" class="b-1">
+                <div class="carousel-slide">
+                    <div class="slider__item">
+                        <img
+                            src="https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2148998015.jpg?t=st=1716448131~exp=1716451731~hmac=1be134811a8eaeef2a88ffd61f9e5eccd29a7424bd657e402447839f911904a4&w=740"
+                            alt="slider image">
+                        <div class="max-w">
+                            <div class="slider__text roboto" data-aos="flip-up"
+                                data-aos-delay="1000">
+                                <h1 class="h1 text__start">Exclusive <br>Zuice
+                                    Bottle</h1>
+                                <p class="line__height para">Lorem ipsum dolor
+                                    sit
+                                    amet consectetur
+                                    adipisicing elit. Officia dolorum corrupti
+                                    quo
+                                    corporis dolor emque cupiditate inventore.
+                                    Deleniti e
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <img
+                            src="https://img.freepik.com/free-photo/black-white-background_23-2150531051.jpg?t=st=1716448169~exp=1716451769~hmac=1137ea221ed15e8aa59062b1b7b529ebe4931ff214a8aacd519b85e5782f12d4&w=826"
+                            alt="slider image">
+                        <div class="max-w">
+                            <div class="slider__text roboto flip2">
+                                <h1 class="h1 text__start">Exclusive <br>Zuice
+                                    Bottle</h1>
+                                <p class="line__height para">Lorem ipsum dolor
+                                    sit
+                                    amet consectetur
+                                    adipisicing elit. Officia dolorum corrupti
+                                    quo
+                                    corporis dolor emque cupiditate inventore.
+                                    Deleniti e
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <img
+                            src="https://img.freepik.com/free-photo/black-white-background_23-2150531051.jpg?t=st=1716448169~exp=1716451769~hmac=1137ea221ed15e8aa59062b1b7b529ebe4931ff214a8aacd519b85e5782f12d4&w=826"
+                            alt="slider image">
+                        <div class="max-w">
+                            <div class="slider__text roboto">
+                                <h1 class="h1 text__start">Exclusive <br>Zuice
+                                    Bottle</h1>
+                                <p class="line__height para">Lorem ipsum dolor
+                                    sit
+                                    amet consectetur
+                                    adipisicing elit. Officia dolorum corrupti
+                                    quo
+                                    corporis dolor emque cupiditate inventore.
+                                    Deleniti e
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="left__button prev">prev<i
+            class="fa-solid fa-arrow-left"></i></button>
+            <button class="right__button next"><i
+            class="fa-solid fa-arrow-right">next</i></button> -->
+                <div class="custom__controls__wrapper">
+                    <button class="custom__control prev"
+                        onclick="onClickArrowHandler(0)"><i
+                            class="fa-solid fa-arrow-left "></i></button>
+                    <!-- dots styling here -->
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <!-- <div class="active__dots">
+               <span class="active__dots"></span>
+               <span class="line"></span>
+               <span class="active__dots"></span>
+               </div> -->
+                    <button class="custom__control next"
+                        onclick="onClickArrowHandler(1)"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <!-- slick slider ends -->
+            <!-- Team Section Starts here -->
+            <section class="max-w team__section">
+                <div data-aos="fade-right" data-aos-delay="200" id="team__img">
+                    <div class="team__image__clip">
+                        <!-- <img class="user__img"
+                            src="https://png.pngtree.com/png-vector/20230928/ourmid/pngtree-young-indian-man-png-image_10149659.png"
+                            alt="man"> -->
+                    </div>
+                </div>
+                <div id="team__text" class="roboto line__height para">
+                    " Our Team Has Explored new functonalities, new ergonomics,
+                    the
+                    feeling of the materials and analyze the user experience of
+                    using an innovative object <a href="#">READ MORE</a>
+                </div>
+                <div id="team__video" data-aos="fade-left" data-aos-delay="100">
+                    <button class="play__btn"><i
+                            class="fa-solid fa-play"></i></button>
+                </div>
+            </section>
+            <!-- team section ends here -->
+            <!-- video and text section -->
+            <section class="video__section">
+                <div class="max-w">
+                    <div class="video__inner">
+                        <div id="video">
+                            <img
+                                src="https://images.pexels.com/photos/3473085/pexels-photo-3473085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="image">
+                            <button class="play_btn"><i
+                                    class="fa-solid fa-play"></i></button>
+                        </div>
+                        <!-- text -->
+                        <div class="video__section__text">
+                            <h1 class="roboto">Is Juicing healthier than eating
+                                whole fruits or vegetables?
+                            </h1>
+                            <p class="roboto line__height para_green">Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur adipisicing elit. Explicabo, quasi?
+                                Ea
+                                placeat, odit praesentium voluptatum reiciendis,
+                                beatae nemo impedit eveniet accusamus illo dolor
+                                repudiandae sint, minus quasi nostrum ut est!
+                            </p>
+                            <p class="roboto line__height para_green">Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur adipisicing elit. Explicabo, quasi?
+                                Ea
+                                placeat, odit praesentium voluptatum reiciendis,
+                                beatae nemo impedit eveniet accusamus illo dolor
+                                repudiandae sint, minus quasi nostrum ut est!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- video and text section ends here -->
+            <!-- showcase starts here -->
+            <section id="showcase">
+                <div class="max-w">
+                    <h1 class="text_center h1 roboto">OUR SHOWECASE</h1>
+                    <div class="team__options roboto">
+                        <ul class="team__links_container roboto">
+                            <li class="team__links selectedd">Glass Bottles</li>
+                            <li class="team__links">Glass Bottles</li>
+                            <li class="team__links">Glass Bottles</li>
+                            <li class="team__links">Glass Bottles</li>
+                        </ul>
+                    </div>
+                    <!-- products -->
+                    <div id="products">
+                        <!-- 1 -->
+                        <div class="product" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="product_img">
+                                <!-- <img src="./assets/honey.png" alt="honey"> -->
+                            </div>
+                            <p class="product__text roboto">Stainless Glass
+                                Juice
+                                Bottle
+                            </p>
+                            <p class="product__price roboto">$35.99</p>
+                            <button class="product__btn">Order Now</button>
+                        </div>
+                        <!-- 2 -->
+                        <div class="product" data-aos="fade-down"
+                            data-aos-delay="200">
+                            <div class="product_img">
+
+                            </div>
+                            <p class="product__text roboto">Stainless Glass
+                                Juice
+                                Bottle
+                            </p>
+                            <p class="product__price roboto">$35.99</p>
+                            <button class="product__btn">Order Now</button>
+                        </div>
+                        <!-- 3 -->
+                        <div class="product" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="product_img">
+                            </div>
+                            <p class="product__text roboto">Stainless Glass
+                                Juice
+                                Bottle
+                            </p>
+                            <p class="product__price roboto">$35.99</p>
+                            <button class="product__btn">Order Now</button>
+                        </div>
+                        <!-- 4 -->
+                        <div class="product" data-aos="fade-down"
+                            data-aos-delay="200">
+                            <div class="product_img">
+                            </div>
+                            <p class="product__text roboto">Stainless Glass
+                                Juice
+                                Bottle
+                            </p>
+                            <p class="product__price roboto">$35.99</p>
+                            <button class="product__btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- showcase ends here -->
+            <!-- testimonials -->
+            <section id="testimonials" class="test-container">
+                <div class="testimonial_slider"
+                    style="height: 100%; width: 100%; position: relative;">
+                    <div class="test_bg__image">
+                        <img src="./assets/test___bg.png"
+                            alt="testimonial background">
+                    </div>
+                    <div class="testimonial1 testimonial test__item left">
+                        <div class="rounded__image bg_image_prop"></div>
+                        <p class="test__text para roboto zinc">Lorem ipsum dolor
+                            sit,
+                            amet consectetur adipisicing elit. Eveniet dolore
+                            possimus sed amet quidem.
+                        </p>
+                        <h3 class="roboto zinc">NICOLAS BELL 1</h3>
+                    </div>
+                    <div class="testimonial2 testimonial  test__item active">
+                        <div class="rounded__image bg_image_prop"></div>
+                        <p class="test__text para roboto zinc">Lorem ipsum dolor
+                            sit,
+                            amet consectetur adipisicing elit. Eveniet dolore
+                            possimus sed amet quidem.
+                        </p>
+                        <h3 class="roboto zinc">NICOLAS BELL 2</h3>
+                    </div>
+                    <div class="testimonial3 testimonial test__item right">
+                        <div class="rounded__image bg_image_prop"></div>
+                        <p class="test__text para roboto zinc">Lorem ipsum dolor
+                            sit,
+                            amet consectetur adipisicing elit. Eveniet dolore
+                            possimus sed amet quidem.
+                        </p>
+                        <h3 class="roboto zinc">NICOLAS BELL 3</h3>
+                    </div>
+                </div>
+                <div class="dots">
+                    <span onclick="testimonialSlider(0)"
+                        style=" display: block;height: 10px; width: 10px; background: black; border-radius: 100%; cursor: pointer;"></span>
+                    <span onclick="testimonialSlider(1)"
+                        style=" display: block;height: 10px; width: 10px; background: black; border-radius: 100%; cursor: pointer;"></span>
+                    <span onclick="testimonialSlider(2)"
+                        style=" display: block;height: 10px; width: 10px; background: black; border-radius: 100%; cursor: pointer;"></span>
+                </div>
+            </section>
+            <!-- testimonial ends here -->
+            <!-- testimonial slick slider starts -->
+            <!-- <div id="testimonials-slick">
+<div class="inner__slick">
+ <div class="card">
+     <div class="rounded__image"></div>
+     <p class="test__text roboto zinc">Lorem ipsum dolor sit,
+         amet consectetur adipisicing elit. Eveniet dolore
+         possimus sed amet quidem.</p>
+     <h3 class="roboto zinc">NICOLAS BELL 1</h3>
+ </div>
+ <div class="card">
+     <div class="rounded__image"></div>
+     <p class="test__text roboto zinc">Lorem ipsum dolor sit,
+         amet consectetur adipisicing elit. Eveniet dolore
+         possimus sed amet quidem.</p>
+     <h3 class="roboto zinc">NICOLAS BELL 1</h3>
+ </div>
+</div>
+</div> -->
+            <!-- testimonial slick slider ends -->
+            <article>
+                <div class="max-w">
+                    <div class="article__inner roboto">
+                        <h1 class="roboto latest__art text__start h1">Latest
+                            Article</h1>
+                        <p class="roboto para_green">Lorem ipsum dolor sit amet
+                            conse
+                            ctetur
+                            adipi fbb r sicing elit. lorem Ipsum rgfdgdf em sed
+                            at
+                            quibusdam
+                        </p>
+                    </div>
+                    <div class="article__grid">
+                        <div class="article__card art__card_1">
+                            <div class="article__image bg_image_prop">
+                            </div>
+                            <p class="roboto para" id="text">Is Beet Juice The
+                                Next
+                                Major
+                                Juicing Trend?
+                            </p>
+                            <p class="roboto price">10th January, 2012</p>
+                        </div>
+                        <div class="article__card art__card_2">
+                            <div class="article__image">
+                            </div>
+                            <p class="roboto para" id="text">Is Beet Juice The
+                                Next
+                                Major
+                                Juicing Trend?
+                            </p>
+                            <p class="roboto price">10th January, 2012</p>
+                        </div>
+                        <div class="article__card art__card_3">
+                            <div class="article__image">
+                            </div>
+                            <p class="roboto para" id="text">Is Beet Juice The
+                                Next
+                                Major
+                                Juicing Trend?
+                            </p>
+                            <p class="roboto price">10th January, 2012</p>
+                        </div>
+                    </div>
+                    <!-- view all button -->
+                    <div class="view__all__btn"><button>View All</button></div>
+                </div>
+            </article>
+            <!-- contact us form -->
+            <div id="contact__us" class="bg_grad p__2">
+                <div class="max-w">
+                    <h1 class="text_center h1" style="padding: 20px;">CONTACT
+                        US</h1>
+                    <div class="form-container">
+                        <form class="form">
+                            <div class="form-group">
+                                <label for="email">Name</label>
+                                <input required name="email" id="email"
+                                    type="text">
+                            </div>
+                            <div class="form-group">
+                                <label class="roboto para"
+                                    for="email">Email</label>
+                                <input required name="email" id="email"
+                                    type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="textarea">How Can We Help
+                                    You?</label>
+                                <textarea required cols="50" rows="10"
+                                    id="textarea"
+                                    name="textarea">          </textarea>
+                            </div>
+                            <button type="submit"
+                                class="form-submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- contact us form ends here-->
+            <!-- footer starts here -->
+            <footer id="footer">
+                <div class="max-w">
+                    <div class="footer__inner roboto">
+                        <!-- footer logo -->
+                        <div id="footer__logo">
+                            <a href="#"><img
+                                    src="https://s.zillowstatic.com/pfs/static/z-logo-default-visual-refresh.svg"
+                                    alt="logo"></a>
+                        </div>
+                        <!-- links list -->
+                        <ul class="footer__list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Offers</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <!-- social links -->
+                        <div class="social__links">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rights roboto">
+                        <ul>
+                            <li><a href="#">&#169; COPY RIGHT</a> </li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer ends here -->
+        </main>
+        <!-- top button -->
+
+        <!-- sidebar starts here -->
+        <aside onclick="sideBarCloseHandler()" class="disp__none sidebarEle"
+            id="mobile__sidebar">
+        </aside>
+        <div class="disp__none sidebar__inner roboto sidebarEle">
+            <div class="sidebar__options"><i
+                    class="fa-solid fa-xmark close"
+                    onclick="sideBarCloseHandler()"></i></div>
+            <div class="sidebar__options">Home</div>
+            <div class="sidebar__options">Product</div>
+            <div class="sidebar__options">Offer</div>
+            <div class="sidebar__options">Discount</div>
+            <div class="sidebar__options">Features</div>
+            <div class="sidebar__options">Blog</div>
+            <div class="sidebar__options">Guide</div>
+            <div class="sidebar__options">Manual</div>
+            <div class="sidebar__options">About us</div>
+        </div>
+        <button id="top__button"><i class="fa-solid fa-angle-up"></i></button>
+        <!-- sidebar enbs here -->
+        <script src="./js/jquery/jquery.min.js"></script>
+        <script type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- aos cdn -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- gsap cdn -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
